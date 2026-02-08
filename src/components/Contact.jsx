@@ -79,6 +79,18 @@ export default function Contact(){
       label: 'Schedule',
       value: 'Schedule a Meeting',
       href: 'https://calendar.app.google/EJ6NS95RmhnKDrNn6'
+    },
+    {
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+          <polyline points="13 2 13 9 20 9" />
+          <line x1="9" y1="15" x2="15" y2="15" />
+        </svg>
+      ),
+      label: 'Portfolio',
+      value: 'My Portfolio',
+      href: 'https://portfolio.mynameisadityassaraf.com/'
     }
   ]
 

@@ -4,7 +4,6 @@ import About from '../components/About'
 import Pillars from '../components/Pillars'
 import Philosophy from '../components/Philosophy'
 import WhyFollow from '../components/WhyFollow'
-import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
@@ -16,7 +15,6 @@ export default function Home(){
       <Pillars />
       <Philosophy />
       <WhyFollow />
-      <Portfolio />
       <Contact />
       <Footer />
     </main>
