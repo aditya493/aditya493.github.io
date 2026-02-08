@@ -21,11 +21,11 @@ export default function Navbar(){
   return (
     <header className={`fixed w-full z-30 transition-all ${scrolled ? 'backdrop-blur bg-black/30' : 'bg-transparent'}`}>
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#top" className="text-emerald-400 font-bold text-lg">Aditya</a>
+        <a href="#top" className="text-yellow-400 font-extrabold text-2xl md:text-3xl">Aditya</a>
 
         <div className="hidden md:flex items-center gap-6">
           {links.map(l=> (
-            <a key={l.href} href={l.href} className="text-slate-200 hover:text-emerald-300 transition">{l.label}</a>
+            <a key={l.href} href={l.href} className="text-slate-200 hover:text-yellow-300 transition">{l.label}</a>
           ))}
         </div>
 

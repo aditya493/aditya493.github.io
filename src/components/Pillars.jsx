@@ -20,8 +20,8 @@ function Card({card, image}){
   return (
     <article className="group bg-gradient-to-br from-slate-800 to-slate-700 p-6 rounded-2xl card-shadow hover:-translate-y-2 transform transition">
       <div className="flex items-center gap-3">
-        <div className="w-12 h-12 rounded-lg bg-emerald-600/10 flex items-center justify-center overflow-hidden">
-          {image ? <img src={image} alt="icon" className="w-full h-full object-cover"/> : <span className="text-emerald-400">🔧</span>}
+        <div className="w-12 h-12 rounded-lg bg-yellow-400/10 flex items-center justify-center overflow-hidden">
+          {image ? <img src={image} alt="icon" className="w-full h-full object-cover"/> : <span className="text-yellow-400">🔧</span>}
         </div>
         <h4 className="text-lg font-semibold">{card.title}</h4>
       </div>
