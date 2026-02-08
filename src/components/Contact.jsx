@@ -1,18 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function Contact(){
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [sent, setSent] = useState(false)
-
-  function onSubmit(e){
-    e.preventDefault()
-    setSent(true)
-    setTimeout(()=>{
-      setName(''); setEmail(''); setMessage('')
-    }, 600)
-  }
 
   const contacts = [
     {
@@ -23,7 +11,7 @@ export default function Contact(){
         </svg>
       ),
       label: 'Email',
-      value: 'adityasaraf64@gmail.com',
+      value: 'Email',
       href: 'mailto:adityasaraf64@gmail.com'
     },
     {
@@ -33,7 +21,7 @@ export default function Contact(){
         </svg>
       ),
       label: 'Phone',
-      value: '+91 7204555215',
+      value: 'Phone',
       href: 'tel:+917204555215'
     },
     {
@@ -119,17 +107,6 @@ export default function Contact(){
             </a>
           ))}
         </div>
-
-        {/* Message Form */}
-        <form onSubmit={onSubmit} className="mt-12 grid grid-cols-1 gap-4 max-w-2xl mx-auto">
-          <input value={name} onChange={e=>setName(e.target.value)} placeholder="Your Name" className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/6 text-slate-100" />
-          <input value={email} onChange={e=>setEmail(e.target.value)} placeholder="Your Email" type="email" className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/6 text-slate-100" />
-          <textarea value={message} onChange={e=>setMessage(e.target.value)} placeholder="Your Message" rows={5} className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/6 text-slate-100"></textarea>
-          <div className="flex items-center gap-3">
-            <button type="submit" className="px-6 py-3 rounded-lg bg-yellow-400 text-black font-semibold hover:bg-yellow-300 transition">Send</button>
-            {sent && <span className="text-yellow-300">Message sent — thanks!</span>}
-          </div>
-        </form>
       </div>
     </section>
   )
