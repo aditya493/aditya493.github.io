@@ -7,8 +7,8 @@ export default function Hero(){
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center px-4">
         <div className="md:col-span-7">
           <div className="text-6xl md:text-7xl font-black text-yellow-400 mb-4 leading-tight">Aditya</div>
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-white">Engineering Reliable Systems. Living Bold Adventures.</h1>
-          <p className="mt-4 text-slate-300 text-lg">DevOps Engineer | SRE | Rider | Explorer — blending infrastructure, resilience, and the mountain riding mindset.</p>
+          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-white">I break systems professionally. I fix them on mountains for fun.</h1>
+          <p className="mt-4 text-slate-300 text-lg">DevOps Engineer | SRE | Rider | Mountain addict — basically I wrangle Kubernetes clusters by day and gravel by night. One pays bills, the other saves my sanity.</p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <a href="#pillars" className="w-full sm:w-auto inline-block text-center px-5 py-3 rounded-lg bg-yellow-400 text-black font-semibold hover:scale-[1.01] transition">Explore My Journey</a>
             <a href="#contact" className="w-full sm:w-auto inline-block text-center px-5 py-3 rounded-lg border border-white/10 text-white hover:bg-white/5 transition">Get In Touch</a>

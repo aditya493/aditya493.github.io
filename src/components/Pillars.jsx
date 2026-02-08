@@ -3,18 +3,16 @@ import devsecops from '../../images/devsecops.png'
 
 const cards = [
   {
-    title: 'Technology & Engineering',
-    items: ['Azure', 'Kubernetes', 'Terraform', 'CI/CD', 'Observability', 'Reliability']
-  },
-  {
-    title: 'Riding & Exploration',
-    items: ['Long-distance riding','Mountain routes','Risk management','Preparation mindset']
-  },
-  {
-    title: 'Growth & Systems Thinking',
-    items: ['Discipline','Continuous learning','Financial growth','Personal systems']
-  }
-]
+      title: 'Tech & The Cloud Life',
+      items: ['Azure', 'Kubernetes', 'Terraform', 'CI/CD', 'Observability', 'Reliability']
+    },
+    {
+      title: 'Two Wheels & Chaos',
+      items: ['Long-distance riding','Mountain routes','Risk management','Surviving stupid plans']
+    },
+    {
+      title: 'Becoming Unbreakable',
+      items: ['Discipline','Learning hard','Making money','Organized chaos']
 
 function Card({card, image}){
   return (
@@ -36,8 +34,8 @@ export default function Pillars(){
   return (
     <section id="pillars" className="py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl font-bold">What I do</h2>
-        <p className="text-slate-300 mt-2">Three pillars that shape how I show up — engineering, exploration, and systems thinking.</p>
+        <h2 className="text-2xl font-bold">The unholy trinity</h2>
+        <p className="text-slate-300 mt-2">Three obsessions. One person. Somehow this makes sense to me. (Your mileage may vary.)</p>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((c,i) => (

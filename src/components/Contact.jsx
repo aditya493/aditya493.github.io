@@ -26,8 +26,8 @@ export default function Contact(){
     <section id="contact" className="py-16">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h3 className="text-4xl md:text-5xl font-black">Let's Connect</h3>
-          <p className="mt-4 text-slate-300 text-lg">Reach out. No corporate BS. Just real conversation.</p>
+          <h3 className="text-4xl md:text-5xl font-black">Let's Talk</h3>
+          <p className="mt-4 text-slate-300 text-lg">Pick your poison. No auto-replies, no marketing calls. Just direct access to me.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

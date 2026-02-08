@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function WhyFollow(){
   const bullets = [
-    'Raw incident stories — what actually happened',
-    'DIY infrastructure patterns you can reuse',
-    'Riding trips that double as engineering lessons',
-    'Real talk: discipline, failure, growth',
-    'No fluff. Just honest, field-tested insights'
+    'War stories from prod disasters (the honest versions)',
+    'Patterns that actually work (not LinkedIn nonsense)',
+    'Riding adventures that somehow teach you about systems',
+    'Brutal honesty about failure, discipline, and growth',
+    'No buzzwords, no corporate speak. Just what works.'
   ]
 
   return (
