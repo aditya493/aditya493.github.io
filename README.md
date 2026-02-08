@@ -32,22 +32,22 @@ npm run preview
 Notes
 - The project uses Tailwind; configuration files `tailwind.config.cjs` and `postcss.config.cjs` are included.
 - The site is client-side static: the contact form is UI-only (no backend).
-- A GitHub Actions workflow is provided at `.github/workflows/deploy-pages.yml` to build and deploy to GitHub Pages automatically on push to `main`.
+- A GitHub Actions workflow is provided at `.github/workflows/deploy-pages.yml` to build and deploy to GitHub Pages automatically on push to `master`.
 
 Publishing to GitHub Pages (recommended)
 
-1. Create a GitHub repo and push this project to `main`.
+1. Create a GitHub repo and push this project to `master`.
 
 ```bash
 git init
 git add .
 git commit -m "Initial site"
-git branch -M main
+git branch -M master
 git remote add origin git@github.com:YOUR_USERNAME/YOUR_REPO.git
-git push -u origin main
+git push -u origin master
 ```
 
-2. The included Actions workflow will build and deploy to Pages automatically on push to `main`.
+2. The included Actions workflow will build and deploy to Pages automatically on push to `master`.
 
 Tailwind / Vite notes
 - If you prefer, run the Vite setup generator instead, then copy `src` and config files into the generated project.
