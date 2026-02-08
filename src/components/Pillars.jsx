@@ -13,6 +13,8 @@ const cards = [
     {
       title: 'Becoming Unbreakable',
       items: ['Discipline','Learning hard','Making money','Organized chaos']
+    }
+  ]
 
 function Card({card, image}){
   return (
