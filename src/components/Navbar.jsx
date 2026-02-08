@@ -15,6 +15,7 @@ export default function Navbar(){
     {label:'About', href:'#about'},
     {label:'What I Do', href:'#pillars'},
     {label:'Philosophy', href:'#philosophy'},
+    {label:'Portfolio', href:'#portfolio'},
     {label:'Contact', href:'#contact'},
   ]
 
