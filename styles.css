@@ -1,0 +1,54 @@
+:root{
+  --bg-1:#0b0f14;
+  --bg-2:#0f1720;
+  --muted:#98a0ab;
+  --accent:#7dd3fc;
+  --primary:#60a5fa;
+  --card:#0f1722;
+  --glass: rgba(255,255,255,0.03);
+  --max-width:1100px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg-1),var(--bg-2));
+  color:#e6eef6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.site{min-height:100vh;display:flex;flex-direction:column}
+.container{width:90%;max-width:var(--max-width);margin:0 auto;padding:48px 0}
+.hero{padding:88px 0 64px}
+.headline{font-size:clamp(28px,5vw,48px);margin:0 0 12px;letter-spacing:-0.02em;font-weight:800}
+.subhead{color:var(--muted);margin:0 0 18px;font-weight:600}
+.intro{color:var(--muted);max-width:65ch}
+.cta-row{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.primary{background:linear-gradient(90deg,var(--primary),var(--accent));color:#061826;box-shadow:0 6px 18px rgba(96,165,250,0.12)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
+.panel{padding:48px 0;opacity:0;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
+.panel.reveal{opacity:1;transform:none}
+.panel.alt{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+
+/* compact hero for small screens */
+.hero.compact{padding:36px 0 28px}
+.hero.compact .headline{font-size:28px}
+
+/* toast for casual interactions */
+.toast{position:fixed;right:20px;bottom:24px;background:rgba(6,24,38,0.92);color:#e6f7ff;padding:10px 14px;border-radius:10px;box-shadow:0 6px 20px rgba(2,6,23,0.6);font-weight:600}
+h2{font-size:20px;margin:0 0 8px;font-weight:700}
+.lead{color:var(--muted);margin:0 0 12px}
+ul{margin:8px 0 0;padding-left:18px}
+li{margin:8px 0;color:#dbe8f5}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.pill-intro{color:var(--muted);margin-bottom:10px}
+.philosophy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:18px}
+.site-footer{padding:28px 0;border-top:1px solid rgba(255,255,255,0.02);margin-top:auto}
+.muted{color:var(--muted);font-size:13px;margin-top:12px}
+
+@media(min-width:900px){
+  .container{padding:56px 0}
+  .headline{font-size:56px}
+}
