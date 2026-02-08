@@ -21,7 +21,7 @@ export default function Navbar(){
   return (
     <header className={`fixed w-full z-30 transition-all ${scrolled ? 'backdrop-blur bg-black/30' : 'bg-transparent'}`}>
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#top" className="text-yellow-400 font-extrabold text-3xl md:text-4xl tracking-tight">Aditya</a>
+        <a href="#top" className="text-yellow-400 font-extrabold text-2xl md:text-3xl tracking-tight">ADITYA SARAF</a>
 
         <div className="hidden md:flex items-center gap-6">
           {links.map(l=> (
