@@ -1,5 +1,5 @@
 import React from 'react'
-import devsecops from '../../images/devsecops.webp'
+import devsecops from '../../images/devsecops.png'
 
 export default function About(){
   return (
