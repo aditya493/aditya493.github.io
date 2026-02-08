@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aditya — Systems Engineer & Rider</title>
+    <meta name="description" content="Aditya — DevOps / SRE. Engineering reliable systems and riding remote passes." />
+    <script type="module" crossorigin src="./assets/index-e96ca5f8.js"></script>
+    <link rel="stylesheet" href="./assets/index-092cf590.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Friendly runtime check: detect if raw JSX is being served (MIME text/jsx)
+      (function(){
+        try{
+          fetch('./src/main.jsx', { method: 'GET' }).then(res => {
+            if(!res.ok) return; // not served -> fine (likely built)
+            const ct = res.headers.get('content-type') || '';
+            if(ct.includes('text/jsx')){
+              const overlay = document.createElement('div');
+              overlay.style.position = 'fixed';
+              overlay.style.inset = '0';
+              overlay.style.display = 'flex';
+              overlay.style.alignItems = 'center';
+              overlay.style.justifyContent = 'center';
+              overlay.style.background = 'linear-gradient(180deg, rgba(2,6,23,0.9), rgba(2,6,23,0.95))';
+              overlay.style.color = '#e6eef6';
+              overlay.style.zIndex = '9999';
+              overlay.innerHTML = `
+                <div style="max-width:640px;padding:24px;border-radius:12px;background:rgba(6,10,15,0.6);box-shadow:0 10px 40px rgba(2,6,23,0.6);text-align:left">
+                  <h2 style="margin:0 0 8px;font-size:20px">This page needs to be served, not opened directly</h2>
+                  <p style="margin:0 0 12px;color:#9aa6b2">You're loading the raw source files. Start the dev server or build the site before opening this page.</p>
+                  <pre style="background:rgba(255,255,255,0.02);padding:10px;border-radius:6px;color:#dbe8f5">npm install
+npm run dev
+-- or --
+npm run build</pre>
+                  <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end">
+                    <button id="overlay-close" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:#a7f3d0;padding:8px 12px;border-radius:8px">Close</button>
+                  </div>
+                </div>`;
+              document.body.appendChild(overlay);
+              document.getElementById('overlay-close').addEventListener('click', ()=>overlay.remove());
+            }
+          }).catch(()=>{});
+        }catch(e){}
+      })();
+    </script>
+    
+  </body>
+</html>
