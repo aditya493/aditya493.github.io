@@ -1,4 +1,11 @@
 import React, { useState } from 'react'
+import myLogo from '../../images/my-logo.jpg'
+import gmailIcon from '../../images/gmail-icon.jpg'
+import instaIcon from '../../images/Instagram-icon.jpg'
+import phoneIcon from '../../images/Phone-icon.jpg'
+import xIcon from '../../images/x-icon.jpg'
+import meetIcon from '../../images/Schedul-icon.jpg'
+import portfolioIcon from '../../images/portfolio-icon.jpg'
 
 export default function Contact(){
   const [name, setName] = useState('')
@@ -17,11 +24,13 @@ export default function Contact(){
 
   return (
     <section id="contact" className="py-16">
-      <div className="max-w-3xl mx-auto px-4">
-        <h3 className="text-2xl font-bold">Let’s build something that lasts</h3>
-        <p className="mt-2 text-slate-300">Build boldly. Ride responsibly. Ship reliably.</p>
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h3 className="text-4xl md:text-5xl font-black">Let's Connect</h3>
+          <p className="mt-4 text-slate-300 text-lg">Reach out. No corporate BS. Just real conversation.</p>
+        </div>
 
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <form onSubmit={onSubmit} className="grid grid-cols-1 gap-4">
             <input value={name} onChange={e=>setName(e.target.value)} placeholder="Name" className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/6 text-slate-100" />
             <input value={email} onChange={e=>setEmail(e.target.value)} placeholder="Email" type="email" className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/6 text-slate-100" />
@@ -32,35 +41,69 @@ export default function Contact(){
             </div>
           </form>
 
-          <aside className="space-y-4">
-            <h4 className="font-semibold">Contact</h4>
-            <div className="flex flex-col gap-2">
-              <a className="inline-flex items-center gap-3 px-4 py-3 bg-slate-800 rounded-lg" href="mailto:adityasaraf64@gmail.com">
-                <span className="text-yellow-400">✉️</span>
-                <span className="text-slate-100">adityasaraf64@gmail.com</span>
+          <div className="space-y-6">
+            <div className="grid grid-cols-2 gap-4">
+              {/* Email */}
+              <a
+                href="mailto:adityasaraf64@gmail.com"
+                className="flex flex-col items-center justify-center p-6 bg-slate-800 hover:bg-slate-700 rounded-xl transition-all hover:scale-105"
+              >
+                <img src={gmailIcon} alt="Email" className="w-14 h-14 object-contain mb-2" />
+                <span className="text-xs font-semibold text-center">Email</span>
               </a>
 
-              <a className="inline-flex items-center gap-3 px-4 py-3 bg-slate-800 rounded-lg" href="https://www.instagram.com/adityassaraf?igsh=MW1kb25sdDEwbGY3Mw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer">
-                <span className="text-yellow-400">📷</span>
-                <span className="text-slate-100">Instagram</span>
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/adityassaraf?igsh=MW1kb25sdDEwbGY3Mw%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-col items-center justify-center p-6 bg-slate-800 hover:bg-slate-700 rounded-xl transition-all hover:scale-105"
+              >
+                <img src={instaIcon} alt="Instagram" className="w-14 h-14 object-contain mb-2" />
+                <span className="text-xs font-semibold text-center">Instagram</span>
               </a>
 
-              <a className="inline-flex items-center gap-3 px-4 py-3 bg-slate-800 rounded-lg" href="https://x.com/AdityaS12084754" target="_blank" rel="noreferrer">
-                <span className="text-yellow-400">✖️</span>
-                <span className="text-slate-100">X</span>
+              {/* X */}
+              <a
+                href="https://x.com/AdityaS12084754"
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-col items-center justify-center p-6 bg-slate-800 hover:bg-slate-700 rounded-xl transition-all hover:scale-105"
+              >
+                <img src={xIcon} alt="X" className="w-14 h-14 object-contain mb-2" />
+                <span className="text-xs font-semibold text-center">X</span>
               </a>
 
-              <a className="inline-flex items-center gap-3 px-4 py-3 bg-slate-800 rounded-lg" href="tel:+917204555215">
-                <span className="text-yellow-400">📞</span>
-                <span className="text-slate-100">+91 72045 55215</span>
+              {/* Phone */}
+              <a
+                href="tel:+917204555215"
+                className="flex flex-col items-center justify-center p-6 bg-slate-800 hover:bg-slate-700 rounded-xl transition-all hover:scale-105"
+              >
+                <img src={phoneIcon} alt="Phone" className="w-14 h-14 object-contain mb-2" />
+                <span className="text-xs font-semibold text-center">Call</span>
               </a>
 
-              <a className="inline-flex items-center gap-3 px-4 py-3 bg-slate-800 rounded-lg" href="https://calendar.app.google/EJ6NS95RmhnKDrNn6" target="_blank" rel="noreferrer">
-                <span className="text-yellow-400">📅</span>
-                <span className="text-slate-100">Schedule a meeting</span>
+              {/* Schedule */}
+              <a
+                href="https://calendar.app.google/EJ6NS95RmhnKDrNn6"
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-col items-center justify-center p-6 bg-slate-800 hover:bg-slate-700 rounded-xl transition-all hover:scale-105"
+              >
+                <img src={meetIcon} alt="Schedule" className="w-14 h-14 object-contain mb-2" />
+                <span className="text-xs font-semibold text-center">Schedule</span>
+              </a>
+
+              {/* Portfolio */}
+              <a
+                href="#portfolio"
+                className="flex flex-col items-center justify-center p-6 bg-yellow-400 hover:bg-yellow-300 text-black rounded-xl transition-all hover:scale-105"
+              >
+                <img src={portfolioIcon} alt="Portfolio" className="w-14 h-14 object-contain mb-2" />
+                <span className="text-xs font-semibold text-center">Portfolio</span>
               </a>
             </div>
-          </aside>
+          </div>
         </div>
       </div>
     </section>

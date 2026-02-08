@@ -6,6 +6,7 @@ export default function Hero(){
     <section id="top" className="pt-24 md:pt-32 pb-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center px-4">
         <div className="md:col-span-7">
+          <div className="text-6xl md:text-7xl font-black text-yellow-400 mb-4 leading-tight">Aditya</div>
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-white">Engineering Reliable Systems. Living Bold Adventures.</h1>
           <p className="mt-4 text-slate-300 text-lg">DevOps Engineer | SRE | Rider | Explorer — blending infrastructure, resilience, and the mountain riding mindset.</p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
