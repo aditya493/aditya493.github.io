@@ -18,10 +18,7 @@ export default function Hero(){
           <div className="w-full max-w-md rounded-3xl overflow-hidden card-shadow relative">
             <img src={himalayan} alt="Royal Enfield Himalayan" className="w-full h-64 md:h-80 object-cover block" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" aria-hidden></div>
-            <div className="absolute left-4 bottom-4 text-sm text-slate-100">
-              <div className="font-semibold">Royal Enfield Himalayan</div>
-              <div className="text-slate-300 text-xs">Long routes, sharper decisions</div>
-            </div>
+            {/* caption removed per request */}
           </div>
         </div>
       </div>
